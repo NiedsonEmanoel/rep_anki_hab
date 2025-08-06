@@ -25,6 +25,16 @@ import urllib.parse
 urlItens = "https://github.com/NiedsonEmanoel/NiedsonEmanoel/raw/main/enem/An%C3%A1lise%20de%20Itens/OrdenarPorTri/gerador/provasOrdernadasPorTri.csv"
 dItens = pd.read_csv(urlItens, encoding='utf-8', decimal=',')
 
+st.markdown("""
+<style>
+.css-1egvi7u {margin-top: -4rem;}
+.css-qrbaxs, .css-15tx938 {min-height: 0.0rem;}
+.css-znku1x a {color: #9d03fc;}  /* Link color (ambos temas) */
+.stSpinner > div > div {border-top-color: #9d03fc;}
+header, #MainMenu, footer {visibility: hidden;}
+</style>
+""", unsafe_allow_html=True)
+
 def flashnamesa(SG):
     if SG == 'Natureza': return 'CN'
     elif SG == 'Matemática': return 'MT'
